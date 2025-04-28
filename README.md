@@ -19,6 +19,7 @@ Sebuah mini-proyek berbasis FastAPI yang yang bertujuan untuk mengelompokkan neg
 ## ⚙️ Cara Menjalankan
 ### 1. Buat Virtual Environment
 python -m venv .env
+
 .env/bin/activate
 
 ### 2. Install Dependensi
