@@ -17,16 +17,36 @@ Sebuah mini-proyek berbasis FastAPI yang yang bertujuan untuk mengelompokkan neg
 - Ringan, cepat, dan siap diintegrasikan ke aplikasi lain
 
 ## ⚙️ Cara Menjalankan
-### 1. Clone Repositori
+### 1. Buat Virtual Environment
+python -m venv .env
+.env/bin/activate
 
-### 2. Buat Virtual Environment
+### 2. Install Dependensi
+pip install -r requirements.txt
 
-### 3. Install Dependensi
+### 3. Jalankan API
+uvicorn main:app --reload
 
-### 4. Jalankan API
-
-### 5. Akses Swagger UI
+### 4. Akses Swagger UI
+Buka browser ke: http://127.0.0.1:8000/docs
 
 ## 🧪 Contoh JSON Input
+{
+  "child_mort": 111,
+  "health": 2,
+  "income": 1000,
+  "life_expec": 33,
+  "gdpp_log": 6.907
+}
 
 ## ✅ Contoh Output
+{
+  "input": {
+    "child_mort": 111,
+    "health": 2,
+    "income": 1000,
+    "life_expec": 33,
+    "gdpp_log": 6.907
+  },
+  "prediksi_cluster": "Cluster 3"
+}
